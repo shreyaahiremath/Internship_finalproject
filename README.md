@@ -1,117 +1,75 @@
-# 💬 TextStream Template
+# FaithPolls
 
-A Next.js template for building real-time AI chat applications with streaming responses! This template provides a complete chat interface with streaming text responses and modern UI.
+**FaithPolls** is an innovative AI-powered polling platform that bridges the gap between news, ethics, and belief systems by generating interactive, faith-based polls. In an era defined by rapid digital communication and global cultural exchange, FaithPolls provides a platform to understand how diverse communities perceive world events.
+
+Unlike traditional polling applications that focus solely on quantitative opinion gathering, FaithPolls uniquely integrates trending news headlines with cultural, ethical, and spiritual contexts.
+
+---
 
 ## Features
 
-- **Real-time Chat**: Instant messaging interface with AI responses
-- **Streaming Responses**: Text streams in real-time for better UX
-- **Message History**: Persistent chat history during session
-- **Loading States**: Visual indicators for processing messages
-- **Modern UI**: Beautiful gradient background with chat bubbles
-- **Keyboard Support**: Enter to send, Shift+Enter for new lines
+### Faith-Based Polls
+- Users can select their religion or worldview, such as:
+  - Hinduism
+  - Islam
+  - Christianity
+  - Buddhism
+  - Sikhism
+  - Jainism
+  - Atheism
+- Instantly generate polls reflecting how different communities might interpret the same event.
 
-## 🚀 Getting Started
+### AI-Powered Analysis
+- Leverages **AI/ML models** to analyze news headlines.
+- Generates **culturally sensitive and ethically grounded poll questions and options**.
+- Adapts dynamically to current events for real-time relevance.
 
-### Installation
+### Interactive User Experience
+- Seamless **Next.js interface** with dynamic navigation.
+- Real-time poll generation and results.
+- Encourages respectful cross-cultural dialogue and ethical awareness.
 
-1. Navigate to the nextjs-app directory:
+### Data Visualization (Future)
+- Graphical representation of poll results.
+- Insights into cultural trends and community opinions.
+- Multilingual support to reach a global audience.
+
+---
+
+## How It Works
+
+1. **Select Religion or Worldview:** Users choose their faith or belief system from available options.
+2. **Generate Polls:** AI analyzes trending news and cultural contexts to create nuanced poll questions.
+3. **Participate and Engage:** Users can vote, view real-time results, and participate in meaningful discussions.
+4. **Share Insights:** Poll outcomes can be shared to spark dialogue and understanding across communities.
+
+---
+
+## Technology Stack
+
+- **Frontend:** Next.js for a modern, responsive user interface.
+- **Backend:** Node.js / Express.js for API integration.
+- **AI/ML Models:** Python or JavaScript-based models for natural language processing and sentiment analysis.
+- **Database:** MongoDB / PostgreSQL for storing polls and results.
+- **News Integration:** Live news APIs for real-time headline analysis.
+
+---
+
+## Installation
+
+To run FaithPolls locally:
+
 ```bash
-cd nextjs-app
-```
+# Clone the repository
+git clone https://github.com/yourusername/faithpolls.git
+cd faithpolls
 
-2. Install dependencies:
-```bash
+# Install dependencies for frontend
+cd frontend
 npm install
-```
-
-3. Run the development server:
-```bash
 npm run dev
-```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 📁 Project Structure
-
-```
-nextjs-app/
-├── app/
-│   ├── api/
-│   │   └── chat/
-│   │       └── route.ts          # Streaming chat API endpoint
-│   ├── globals.css               # Global styles
-│   ├── layout.tsx                # Root layout component
-│   └── page.tsx                  # Main chat interface
-├── package.json                  # Dependencies and scripts
-└── tsconfig.json                 # TypeScript configuration
-```
-
-## 💬 Chat Features
-
-The template includes:
-
-- **Streaming Text**: Real-time text streaming for AI responses
-- **Chat Interface**: User and assistant message bubbles
-- **Message State**: Loading indicators and typing animations
-- **Auto-scroll**: Automatic scrolling to latest messages
-- **Error Handling**: Graceful error states and retry logic
-
-### Chat Interface
-
-The chat component provides:
-
-1. **Message Input**: Multi-line text area with send button
-2. **Message Display**: Styled chat bubbles for user/assistant
-3. **Streaming Display**: Real-time text appearance
-4. **Loading States**: Animated dots during processing
-
-## 🤖 AI Integration
-
-The template includes a chat API endpoint at `/api/chat` for:
-
-- Streaming text responses
-- Conversation context management
-- Error handling and recovery
-- Customizable AI behavior
-
-### Streaming Implementation
-
-The chat uses:
-- **ReadableStream**: For real-time text streaming
-- **TextDecoder**: For processing streamed chunks
-- **State Management**: React state for message handling
-
-## 🎨 Customization
-
-- Modify chat styling in `page.tsx`
-- Adjust streaming behavior in API route
-- Add message formatting and markdown
-- Extend with file uploads or images
-- Customize AI response behavior
-
-## 📝 Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
-## 🛠️ Technologies
-
-- **Next.js 14** - React framework with App Router
-- **TypeScript** - Type safety and better DX
-- **Tailwind CSS** - Utility-first CSS framework
-- **Streaming API** - Real-time text streaming
-- **React Hooks** - State management
-- **Lucide React** - Beautiful icons
-
-## 🔧 Chat Configuration
-
-The chat interface supports:
-- Multi-line input with Shift+Enter
-- Auto-expanding text areas
-- Keyboard shortcuts (Enter to send)
-- Responsive design for mobile/desktop
-
-Build amazing conversational AI experiences! 💬 
+# Install dependencies for backend
+cd ../backend
+npm install
+npm start
